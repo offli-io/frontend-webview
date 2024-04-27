@@ -44,9 +44,8 @@ export default function App() {
         allowsBackForwardNavigationGestures
         style={styles.webview}
         source={{
-          uri: "https://app.offli.eu",
+          uri: "https://app.offli.eu/",
         }}
-        mediaCapturePermissionGrantType="grant"
         startInLoadingState
         javaScriptEnabled
         domStorageEnabled
@@ -54,8 +53,8 @@ export default function App() {
         thirdPartyCookiesEnabled
         allowsProtectedMedia
         allowUniversalAccessFromFileURLs
-        allowsInlineMediaPlayback
         mediaPlaybackRequiresUserAction={false}
+        allowsInlineMediaPlayback
         onLoadEnd={provideDeviceInformation}
         onMessage={onMessage}
         webviewDebuggingEnabled={true}

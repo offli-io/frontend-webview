@@ -2,7 +2,7 @@
   "expo": {
     "name": "Offli",
     "slug": "offli",
-    "version": "1.0.0",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -13,8 +13,11 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "bundleIdentifier": "eu.offli.app",
-      "supportsTablet": true
+      "bundleIdentifier": "com.app.offli",
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to upload photos."
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -29,7 +32,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "offli"
+        "projectId": "541ac082-36be-4cfd-8cd1-19200a87a656"
       }
     }
   }
