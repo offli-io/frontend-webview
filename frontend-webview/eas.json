@@ -1,18 +1,51 @@
 {
   "cli": {
-    "version": ">= 7.3.0"
+    "version": ">= 3.18.3",
+    "requireCommit": true
   },
   "build": {
+    "base": {
+      "developmentClient": false,
+      "distribution": "internal",
+      "ios": {
+        "cocoapods": "1.15.2"
+      }
+    },
     "development": {
       "developmentClient": true,
       "distribution": "internal"
     },
-    "preview": {
-      "distribution": "internal"
+    "testing": {
+      "extends": "base",
+      "android": {
+        "buildType": "apk"
+      },
+      "ios": {
+        "buildConfiguration": "Release",
+        "enterpriseProvisioning": "universal"
+      }
     },
-    "production": {}
+    "production": {
+      "extends": "base",
+      "distribution": "store",
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
   },
   "submit": {
+    "testing": {
+      "android": {
+        "applicationId": "eu.offli.app",
+        "changesNotSentForReview": true,
+        "releaseStatus": "draft"
+      },
+      "ios": {
+        "appleId": "thefaston@gmail.com",
+        "appleTeamId": "W7Q9YP35BN",
+        "ascAppId": "6478879679"
+      }
+    },
     "production": {}
   }
 }
