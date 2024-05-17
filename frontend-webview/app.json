@@ -24,8 +24,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "eu.offli.app",
-      "versionCode": 1
+      "package": "com.app.offli",
+      "versionCode": 2
     },
     "web": {
       "favicon": "./assets/favicon.png"
