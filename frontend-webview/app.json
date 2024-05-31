@@ -16,7 +16,7 @@
       "bundleIdentifier": "com.app.offli",
       "supportsTablet": true,
       "infoPlist": {
-        "NSCameraUsageDescription": "This app uses the camera to upload photos."
+        "NSCameraUsageDescription": "This app uses the camera to allow you to take and upload photos for your profile or title picture."
       }
     },
     "android": {
