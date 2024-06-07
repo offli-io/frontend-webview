@@ -32,6 +32,26 @@ export default function App() {
     }
   };
 
+  const handleBackButtonPress = () => {
+    try {
+      webViewRef?.current?.goBack();
+    } catch (err) {
+      console.log("[handleBackButtonPress] Error : ", err.message);
+    }
+
+    return true;
+  };
+
+  useEffect(() => {
+    BackHandler.addEventListener("hardwareBackPress", handleBackButtonPress);
+    return () => {
+      BackHandler.removeEventListener(
+        "hardwareBackPress",
+        handleBackButtonPress
+      );
+    };
+  }, []);
+
   return (
     <SafeAreaView
       style={[
