@@ -1,5 +1,5 @@
 import React from "react";
-import { Platform, SafeAreaView, StyleSheet } from "react-native";
+import { BackHandler, Platform, SafeAreaView, StyleSheet } from "react-native";
 import { WebView } from "react-native-webview";
 
 export default function App() {
@@ -42,7 +42,7 @@ export default function App() {
     return true;
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     BackHandler.addEventListener("hardwareBackPress", handleBackButtonPress);
     return () => {
       BackHandler.removeEventListener(
