@@ -16,7 +16,8 @@
       "bundleIdentifier": "com.app.offli",
       "supportsTablet": true,
       "infoPlist": {
-        "NSCameraUsageDescription": "This app uses the camera to allow you to take and upload photos for your profile or title picture."
+        "NSCameraUsageDescription": "This app uses the camera to allow you to take and upload photos for your profile or title picture.",
+        "NSLocationWhenInUseUsageDescription": "This app uses location to display nearest activities around you"
       }
     },
     "android": {
@@ -24,6 +25,7 @@
         "foregroundImage": "./assets/offli-adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
+      "permissions": ["android.permission.ACCESS_FINE_LOCATION"],
       "package": "com.app.offli",
       "versionCode": 6
     },
