@@ -2,7 +2,7 @@
   "expo": {
     "name": "Offli",
     "slug": "offli",
-    "version": "1.0.9",
+    "version": "1.0.10",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -27,7 +27,7 @@
       },
       "permissions": ["android.permission.ACCESS_FINE_LOCATION"],
       "package": "com.app.offli",
-      "versionCode": 6
+      "versionCode": 7
     },
     "web": {
       "favicon": "./assets/favicon.png"
